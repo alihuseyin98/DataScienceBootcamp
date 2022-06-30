@@ -6,8 +6,9 @@ payments=list(map(lambda c : sum(c[1]),customers))
 print("customer who paid more :",customers[payments.index(max(payments))][0])
 
 #2
+print("Sorted",sorted(customers, key=lambda c:sum(c[1]))[-1][0])
 l2=sorted(customers, key=lambda c:sum(c[1]))
-print(l2[-1][0])
+print("$2",l2[-1][0])
 #total payments made by all customers :
 
 #summ=0
